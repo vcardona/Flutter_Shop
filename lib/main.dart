@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
+import 'package:flutter_ecom/components/horizontal_listview.dart';
+
 void main() {
   runApp(
     MaterialApp(
@@ -41,7 +43,7 @@ class _HomepageState extends State<Homepage> {
       appBar: new AppBar(
         elevation: 0.0,
         backgroundColor: Colors.black,
-        title: Text('ShoppinApp'),
+        title: Text('Shopping App'),
         actions: <Widget>[
           new IconButton(
               icon: Icon(
@@ -150,7 +152,14 @@ class _HomepageState extends State<Homepage> {
         ), //ListView
       ), //Drawer
       body: new ListView(
-        children: <Widget>[image_carousel],
+        children: <Widget>[
+          image_carousel,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: new Text('Categories'),
+          ), //Padding
+          HorizontalList(),
+        ],
       ),
     ); //Scaffold
   }
