@@ -32,7 +32,7 @@ class _HomepageState extends State<Homepage> {
         ],
         autoplay: false,
         dotSize: 4.0,
-        indicatorBgPadding: 8.0,
+        indicatorBgPadding: 7.0,
         animationCurve: Curves.fastOutSlowIn,
         animationDuration: Duration(milliseconds: 1000),
       ),
