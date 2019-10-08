@@ -46,11 +46,117 @@ class _ProductDetailsState extends State<ProductDetails> {
               child: Container(
                 color: Colors.white,
                 child: Image.asset(widget.product_detail_picture),
-              ),
-            ),
-          )
+              ), //Container
+              footer: new Container(
+                color: Colors.white70,
+                child: ListTile(
+                  leading: new Text(
+                    widget.product_detail_name,
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 16.0),
+                  ),
+                  title: new Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: new Text(
+                          "\$ ${widget.product_detail_old_price}",
+                          style: TextStyle(
+                              color: Colors.grey,
+                              decoration: TextDecoration.lineThrough),
+                        ),
+                      ), //Expanded
+                      Expanded(
+                        child: new Text(
+                          "\$ ${widget.product_detail_new_price}",
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, color: Colors.red),
+                        ),
+                      ), //Expanded
+                    ],
+                  ), //Row
+                ), //ListTile
+              ), //Container
+            ), //GridTile
+          ), //Container
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: MaterialButton(
+                  onPressed: () {},
+                  color: Colors.white,
+                  textColor: Colors.grey,
+                  elevation: 2.0,
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: new Text("Size"),
+                      ), //Expanded
+                      Expanded(
+                        child: new Icon(Icons.arrow_drop_down),
+                      ), //Expanded
+                    ],
+                  ), //Row
+                ), //MaterialButton
+              ), //Expanded
+              Expanded(
+                child: MaterialButton(
+                  onPressed: () {},
+                  color: Colors.white,
+                  textColor: Colors.grey,
+                  elevation: 2.0,
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: new Text("Color"),
+                      ), //Expanded
+                      Expanded(
+                        child: new Icon(Icons.arrow_drop_down),
+                      ), //Expanded
+                    ],
+                  ), //Row
+                ), //MaterialButton
+              ), //Expanded
+              Expanded(
+                child: MaterialButton(
+                  onPressed: () {},
+                  color: Colors.white,
+                  textColor: Colors.grey,
+                  elevation: 2.0,
+                  child: Row(
+                    children: <Widget>[
+                      Expanded(
+                        child: new Text("Qty"),
+                      ), //Expanded
+                      Expanded(
+                        child: new Icon(Icons.arrow_drop_down),
+                      ), //Expanded
+                    ],
+                  ), //Row
+                ), //MaterialButton
+              ), //Expanded
+            ], //Widget
+          ), //Row
+          Row(
+            children: <Widget>[
+              Expanded(
+                child: MaterialButton(
+                  onPressed: () {},
+                  color: Colors.red,
+                  textColor: Colors.white,
+                  elevation: 0.2,
+                  child: new Text("Buy now"),
+                ), //Material Button
+              ), //Expanded
+              new IconButton(
+                  icon: Icon(Icons.add_shopping_cart), onPressed: () {}),
+              new IconButton(
+                  icon: Icon(Icons.favorite_border),
+                  color: Colors.red,
+                  onPressed: () {})
+            ],
+          ), //Row
         ],
-      ),
+      ), //ListView
     ); //Scaffold,);
   }
 }
