@@ -15,17 +15,65 @@ class _ProductsState extends State<Products> {
       "price": 85,
     },
     {
-      "name": "Blazer2",
+      "name": "Blazer Dos",
       "picture": "images/products/blazer2.jpeg",
       "old_price": 120,
       "price": 85,
     },
     {
-      "name": "Dress",
+      "name": "Dress uno",
       "picture": "images/products/dress1.jpeg",
       "old_price": 120,
       "price": 85,
-    }
+    },
+    {
+      "name": "Dress dos",
+      "picture": "images/products/dress2.jpeg",
+      "old_price": 120,
+      "price": 85,
+    },
+    {
+      "name": "Hills",
+      "picture": "images/products/hills1.jpeg",
+      "old_price": 120,
+      "price": 85,
+    },
+    {
+      "name": "Hills dos",
+      "picture": "images/products/hills2.jpeg",
+      "old_price": 120,
+      "price": 85,
+    },
+    {
+      "name": "Pants",
+      "picture": "images/products/pants1.jpg",
+      "old_price": 120,
+      "price": 85,
+    },
+    {
+      "name": "Pants dos",
+      "picture": "images/products/pants2.jpeg",
+      "old_price": 120,
+      "price": 85,
+    },
+    {
+      "name": "Shoes 1",
+      "picture": "images/products/shoe1.jpg",
+      "old_price": 120,
+      "price": 85,
+    },
+    {
+      "name": "Skt",
+      "picture": "images/products/skt1.jpeg",
+      "old_price": 120,
+      "price": 85,
+    },
+    {
+      "name": "Skt dos",
+      "picture": "images/products/skt2.jpeg",
+      "old_price": 120,
+      "price": 85,
+    },
   ];
 
   @override

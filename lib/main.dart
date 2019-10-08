@@ -36,13 +36,14 @@ class _HomepageState extends State<Homepage> {
         autoplay: false,
         dotSize: 4.0,
         indicatorBgPadding: 7.0,
+        dotBgColor: Colors.transparent,
         animationCurve: Curves.fastOutSlowIn,
         animationDuration: Duration(milliseconds: 1000),
       ),
     );
     return Scaffold(
       appBar: new AppBar(
-        elevation: 0.0,
+        elevation: 0.1,
         backgroundColor: Colors.black,
         title: Text('Shopping App'),
         actions: <Widget>[
