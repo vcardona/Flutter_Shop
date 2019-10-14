@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
-import 'package:flutter_ecom/components/products.dart';
-
+import 'package:flutter/material.dart';
 import 'package:flutter_ecom/components/horizontal_listview.dart';
+import 'package:flutter_ecom/components/products.dart';
+import 'package:flutter_ecom/pages/cart.dart';
 
 void main() {
   runApp(
@@ -58,7 +58,10 @@ class _HomepageState extends State<Homepage> {
                 Icons.shopping_cart,
                 color: Colors.white,
               ),
-              onPressed: () {}),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => new Cart()));
+              }),
         ],
       ), //AppBar
       drawer: new Drawer(
@@ -85,7 +88,7 @@ class _HomepageState extends State<Homepage> {
                 title: Text('Home Page'),
                 leading: Icon(
                   Icons.home,
-                  color: Colors.amber,
+                  color: Colors.black,
                 ),
               ),
             ),
@@ -110,7 +113,12 @@ class _HomepageState extends State<Homepage> {
               ),
             ),
             InkWell(
-              onTap: () {},
+              onTap: () {
+                {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => new Cart()));
+                }
+              },
               child: ListTile(
                 title: Text('Shopping Cart'),
                 leading: Icon(
@@ -136,7 +144,7 @@ class _HomepageState extends State<Homepage> {
                 title: Text('Settings'),
                 leading: Icon(
                   Icons.settings,
-                  color: Colors.amber,
+                  color: Colors.blue,
                 ),
               ),
             ),
@@ -146,7 +154,7 @@ class _HomepageState extends State<Homepage> {
                 title: Text('About'),
                 leading: Icon(
                   Icons.help,
-                  color: Colors.amber,
+                  color: Colors.green,
                 ),
               ),
             ),
